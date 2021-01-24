@@ -46,9 +46,6 @@ body {
   line-height: 30px;
   margin-bottom: 20px;
   font-weight: 200;
-  cursor: pointer;
-  transition: all 500ms;
-  animation: scale 1s 1s alternate infinite;
 }
 .header-page__title--bold-title {
   display: block;
@@ -108,16 +105,6 @@ body {
 .grid-item__icon {
   width: 22.5%;
   align-self: flex-end;
-  transition: all 0.5s;
-  animation: scale 1s 1s alternate infinite;
-}
-@keyframes scale {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
 }
 @media screen and (min-width: 425px) {
   .header-page {
