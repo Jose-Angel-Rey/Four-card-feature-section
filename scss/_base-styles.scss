@@ -1,7 +1,9 @@
 /* Coded by: Jose Angel Rey
 Github: https://github.com/Jose-Angel-Rey
 Gmail: dev.joseangel.rey@gmail.com */
-
+:root {
+  font-size: 62.5%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@ Gmail: dev.joseangel.rey@gmail.com */
 
 body {
   background-color: $body-bg-color;
+  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
