@@ -1,22 +1,32 @@
-// .main-container {
-//     width: 85%;
-//   }
-//   .header-page {
-//     text-align: center;
-//     color: #4c4e61;
-//     padding: 80px 0 70px 0;
-//   }
-//   .header-page__title {
-//     font-size: 25px;
-//     font-weight: 500;
-//     line-height: 30px;
-//     margin-bottom: 20px;
-//     font-weight: 200;
-//   }
-//   .header-page__title--bold-title {
-//     display: block;
-//     font-weight: 700;
-//   }
+.main-container {
+  width: 85%;
+  max-width: 400px;
+  margin: 100px auto 25px;
+}
+
+/* Header styles */
+.header-page {
+  color: $title-color;
+  margin-bottom: 60px;
+
+  &#{__title} {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-weight: 200;
+  }
+  &#{__title--bold-title} {
+    display: block;
+    font-weight: 700;
+  }
+  &#{__info} {
+    text-align: center;
+  }
+}
+
+  // &#{}
+
 //   .grid-item__info,
 //   .header-page__info {
 //     font-size: 15px;
