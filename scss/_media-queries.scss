@@ -1,0 +1,82 @@
+@media screen and (min-width: 425px) {
+    .header-page {
+      max-width: 400px;
+      margin: auto;
+    }
+    .grid-container {
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid-item {
+      max-width: 350px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    body {
+      height: 100vh;
+    }
+    .header-page__title {
+      font-size: 30px;
+    }
+    .grid-container {
+      max-width: 600px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "super-card  team-card" "karma-card calc-card";
+    }
+    .grid-item {
+      height: 250px;
+      width: 280px;
+    }
+    .grid-item:nth-child(1) {
+      grid-area: super-card;
+    }
+    .grid-item:nth-child(2) {
+      grid-area: team-card;
+    }
+    .grid-item:nth-child(3) {
+      grid-area: karma-card;
+    }
+    .grid-item:nth-child(4) {
+      grid-area: calc-card;
+    }
+    .attribution {
+      margin: 20px auto;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .header-page {
+      max-width: 500px;
+      padding: 45px 0;
+    }
+    .header-page__title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 25px;
+    }
+    .grid-container {
+      gap: 30px;
+      max-width: 735px;
+    }
+    .grid-item {
+      height: 250px;
+      width: 350px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "super-card  team-card  calc-card" "super-card karma-card calc-card";
+    }
+    .grid-item {
+      height: 245px;
+    }
+    .header-page__title {
+      font-size: 37px;
+    }
+    .grid-item__info {
+      font-size: 14px;
+    }
+  }
+  
